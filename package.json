@@ -1,0 +1,30 @@
+{
+  "name": "appsalon_mevn_backend",
+  "version": "1.0.0",
+  "description": "Backend para AppSalon en MEVN",
+  "license": "ISC",
+  "author": "Carlos Almaras",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node --watch index.js",
+    "dev:postman": "node --watch index.js --postman",
+    "start": "nodemon index.js",
+    "seed:import": "node data/seed.js --import",
+    "seed:destroy": "node data/seed.js --destroy"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "colors": "^1.4.0",
+    "cors": "^2.8.5",
+    "date-fns": "^4.1.0",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.15.1",
+    "nodemailer": "^7.0.3"
+  }
+}
