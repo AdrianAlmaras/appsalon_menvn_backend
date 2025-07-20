@@ -31,7 +31,7 @@ const whitelist = process.argv[2] === '--postman' ? [process.env.FRONTEND_URL, u
 // como el origen es undefined en postman lo habilitamos
 const corsOptions = {
     origin: function(origin, callback) {
-        //console.log(origin); http://localhost:5173
+        console.log('Origin:', origin);  // http://localhost:5173
         if(whitelist.includes(origin)) {
             // permitir conexion
             callback(null, true)
